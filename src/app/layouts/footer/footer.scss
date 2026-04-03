@@ -1,0 +1,42 @@
+/* Footer background complements #051F20 */
+.footer {
+    background: linear-gradient(180deg, #051F20, #0a2a2b);
+    color: #cce7e8;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer-heading {
+    color: #00f5d4;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-link {
+    color: #cce7e8;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+/* Hover animation */
+.footer-link:hover {
+    color: #00f5d4;
+    transform: translateX(5px);
+    text-shadow: 0 0 6px rgba(0, 245, 212, 0.6);
+}
+
+.footer-bottom {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}

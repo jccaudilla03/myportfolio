@@ -1,0 +1,81 @@
+    body {
+        margin: 0;
+        padding-top: 70px;
+        background-color: #0b2e2f;
+    }
+
+    /* Navbar base */
+    .navbar {
+        background-color: #051F20;
+        animation: fadeDown 0.8s ease;
+    }
+
+    /* Entry animation */
+    @keyframes fadeDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Brand style */
+    .navbar-brand {
+        color: #ffffff !important;
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+    .navbar-brand:hover {
+        color: #00f5d4 !important;
+        text-shadow: 0 0 10px rgba(0, 245, 212, 0.7);
+    }
+
+    /* Nav links */
+    .nav-link {
+        color: #cce7e8 !important;
+        margin-left: 20px;
+        position: relative;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+
+    /* Underline animation */
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #00f5d4;
+        transition: 0.3s ease;
+    }
+
+    .nav-link.active::after {
+        width: 100%;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    /* Hover glow */
+    .nav-link:hover {
+        color: #00f5d4 !important;
+        text-shadow: 0 0 6px rgba(0, 245, 212, 0.6);
+    }
+
+    /* Mobile toggle fix */
+    .navbar-toggler {
+        border-color: #00f5d4;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
