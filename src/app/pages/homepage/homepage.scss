@@ -1,12 +1,12 @@
-body {
-  background-color: #051F20;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden;
-}
+// body {
+//   background-color: #051F20;
+//   color: #fff;
+//   font-family: 'Poppins', sans-serif;
+//   overflow: hidden;
+// }
 
 .home-container {
-  height: 100vh;
+  height: 90vh;
 }
 
 /* LEFT SIDE TEXT ANIMATION */
@@ -66,26 +66,41 @@ body {
 }
 
 .profile-img {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 2;
   position: relative;
+  animation: pulseImg 4s infinite;
 }
 
 /* NEON GLOW EFFECT */
 .glow-ring {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   border: 3px solid #00ff9f;
-  animation: pulse 4s infinite;
+  animation: pulseRing 4s infinite;
   box-shadow: 0 0 40px #00ff9f, 0 0 100px #00ff9f;
 }
 
-@keyframes pulse {
+@keyframes pulseImg {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseRing {
   0% {
     transform: scale(1);
     opacity: 0.7;
@@ -102,6 +117,61 @@ body {
   }
 }
 
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative; //for the link overlay
+  background-color: #235347;
+  border: rgb(45, 104, 104) 2px solid;
+  width: 300px;
+  height: 200px;
+}
+
+.card:hover {
+  animation: cardHover 0.5s forwards;
+}
+
+@keyframes cardHover {
+  0% {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  100% {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px #00ff9f;
+  }
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #00ff9f;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00f5d4;
+}
+
+.card-text {
+  color: #b6e7e7;
+ }
+
+.card-link {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   body {
@@ -112,5 +182,10 @@ body {
   }
   .desc {
     margin: 0 auto;
+  }
+  .profile-img,
+  .glow-ring {
+    width: 300px;
+    height: 300px;
   }
 }

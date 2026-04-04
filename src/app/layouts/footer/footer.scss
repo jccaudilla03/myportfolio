@@ -4,7 +4,18 @@
     color: #cce7e8;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
+
+.mb-4 {
+    margin-bottom: 0rem !important;
+}
+
+// .about-footer {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
 
 .footer-title {
     color: #ffffff;
@@ -18,7 +29,7 @@
 }
 
 .footer-text {
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.6;
 }
 
@@ -26,7 +37,7 @@
     color: #cce7e8;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     transition: 0.3s;
 }
 

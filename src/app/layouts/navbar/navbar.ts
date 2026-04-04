@@ -8,9 +8,15 @@ import { RouterLink } from "@angular/router";
   styleUrl: './navbar.scss',
 })
 export class Navbar {
+
+  navBarBrand: string = '';
+
   navItemsList: NavBarItems[] = [];
 
   constructor() {
+
+    this.navBarBrand = 'Developer';
+
     this.navItemsList = [
       { liClass: 'nav-item', aClass: 'nav-link', routerLink: 'homepage', isActive: false, text: 'Home' },
       { liClass: 'nav-item', aClass: 'nav-link', routerLink: 'skills', isActive: false, text: 'Skills' },
@@ -27,7 +33,7 @@ export class Navbar {
       }
     });
 
-    item.isActive = !item.isActive;
+    item.isActive = true;
 
   }
 }
