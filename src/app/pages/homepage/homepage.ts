@@ -21,9 +21,9 @@ export class Homepage {
     this.description = 'Passionate developer specializing in Angular and modern web technologies. I build clean, scalable, and user-friendly applications with a focus on performance and design.';
 
     this.cardContents = [
-      {title: 'Skills', description: 'Description for Card 1', link: 'skills', icon: 'bi bi-code-slash'},
-      {title: 'Experience', description: 'Description for Card 2', link: 'experience', icon: 'bi bi-briefcase'},
-      {title: 'Contacts', description: 'Description for Card 3', link: 'contacts', icon: 'bi bi-envelope'},
+      {title: 'Skills', description: 'Description for Card 1', link: '../skills', icon: 'bi bi-code-slash'},
+      {title: 'Experience', description: 'Description for Card 2', link: '../experience', icon: 'bi bi-briefcase'},
+      {title: 'Contacts', description: 'Description for Card 3', link: '../contacts', icon: 'bi bi-envelope'},
     ]
   }
 }
