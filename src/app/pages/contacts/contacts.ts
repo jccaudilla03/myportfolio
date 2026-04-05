@@ -26,6 +26,16 @@ export class Contacts {
         cardIcon: 'bi bi-linkedin',
         cardTitle: 'Linkedin',
         cardText: 'www.linkedin.com/in/jewel-caudilla'
+      },
+      {
+        cardIcon: 'bi bi-github',
+        cardTitle: 'GitHub',
+        cardText: 'https://github.com/jccaudilla03'
+      },
+      {
+        cardIcon: 'bi bi-journal-bookmark-fill',
+        cardTitle: 'Portfolio',
+        cardText: 'https://jccaudilla03.github.io/myportfolio/'
       }
     ];
   }
