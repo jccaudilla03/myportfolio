@@ -1,15 +1,26 @@
 <div class="container main-container">
-    <h1 class="page-header">My Skills</h1>
-    <div class="container container-skills">
-        @for (item of skillsList; track $index) {
-        <div class="col col-md-6">
-            <div class="container skill-item">
-                <h3 class="skill-header">{{ item.name }}</h3>
-                <div class="progress">
-                    <div class="progress-bar" [style]=" 'width: ' + item.proficiency + '%' "></div>
+    @for (group of finalArray; track $index) {
+    <div class="group-container">
+        <h2 class="group-header">{{ group.group }}</h2>
+        @for (category of group.categories; track $index) {
+        <div class="category-container">
+            <h3 class="category-header">{{ category.category }}</h3>
+            <div class="container container-skills">
+                @for (skill of category.skills; track $index) {
+                <div class="col col-md-6">
+                    <div class="container skill-item">
+                        <h4 class="skill-header">{{ skill.name }}</h4>
+                        <div class="progress">
+                            <div class="progress-bar" [style]=" 'width: ' + skill.proficiency + '%' "></div>
+                        </div>
+                    </div>
                 </div>
+                }
+
             </div>
+            
         </div>
-        }
+    }
     </div>
+    }
 </div>
