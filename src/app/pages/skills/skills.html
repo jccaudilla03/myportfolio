@@ -1,1 +1,15 @@
-<p>skills works!</p>
+<div class="container main-container">
+    <h1 class="page-header">My Skills</h1>
+    <div class="container container-skills">
+        @for (item of skillsList; track $index) {
+        <div class="col col-md-6">
+            <div class="container skill-item">
+                <h3 class="skill-header">{{ item.name }}</h3>
+                <div class="progress">
+                    <div class="progress-bar" [style]=" 'width: ' + item.proficiency + '%' "></div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
