@@ -15,8 +15,11 @@
         <ul class="navbar-nav">
           @for (item of navItemsList; track $index) {
           <li class="{{item.liClass}}">
-            <a class="{{item.aClass}} {{item.isActive ? 'active' : ''}}" routerLink="{{item.routerLink}}"
+            <!-- <a class="{{item.aClass}} {{item.isActive ? 'active' : ''}}" routerLink="{{item.routerLink}}"
               (click)="onActive(item)">
+              {{item.text}}
+            </a> -->
+            <a class="{{item.aClass}} {{item.isActive ? 'active' : ''}}" routerLink="{{item.routerLink}}">
               {{item.text}}
             </a>
           </li>

@@ -26,16 +26,16 @@ export class Navbar {
   }
 
 
-  onActive(item: NavBarItems) {
-    this.navItemsList.forEach(navItem => {
-      if (navItem !== item) {
-        navItem.isActive = false;
-      }
-    });
+  // onActive(item: NavBarItems) {
+  //   this.navItemsList.forEach(navItem => {
+  //     if (navItem !== item) {
+  //       navItem.isActive = false;
+  //     }
+  //   });
 
-    item.isActive = true;
+  //   item.isActive = true;
 
-  }
+  // }
 }
 
 class NavBarItems {
