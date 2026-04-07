@@ -1,1 +1,42 @@
-<p>experience works!</p>
+<div class="container main-container">
+    <div class="container title-container">
+        <h1 class="text-center">Experience</h1>
+    </div>
+    <div class=" container body-container">
+        @for (item of experiencesList; track $index) {
+        <div class="row">
+            <div class="experience-item">
+                <div class="company">
+                    <div class="company-name">
+                        <h2 >{{ item.companyName }}</h2>
+                    </div>
+                    <div class="company-location">
+                        <div class="location"> {{ item.companyLocation }}</div>
+                    </div>
+                </div>
+                @for (jobDesc of item.jobDesc; track $index) {
+                <div class="job-desc">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="position-name">
+                                <h5 class="position-text">{{ jobDesc.position }}</h5>
+                                <small>{{ jobDesc.duration }}</small>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="contribution-section">
+                                <ul>
+                                    @for (contribution of jobDesc.contributions; track $index) {
+                                    <li class="contribution-item">{{ contribution }}</li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        }
+    </div>
+</div>

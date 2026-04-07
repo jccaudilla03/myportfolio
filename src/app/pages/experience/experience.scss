@@ -1,0 +1,33 @@
+.main-container {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.experience-item {
+    background-color: rgba(18, 46, 44, 0.4);
+    border: 3px solid #235347;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-location {
+    font-size: 14px;
+}
+
+.job-desc {
+    padding: 20px;
+}
+
+.position-text {
+    color: #32cea7;
+}
+
+.contribution-item {
+    padding-bottom: 4px;
+}
