@@ -20,13 +20,13 @@ export class Skills implements OnInit {
         group: 'Technical Skills',
         category: 'Frontend',
         name: 'Angular Framework',
-        proficiency: 97
+        proficiency: 98
       },
       {
         group: 'Technical Skills',
         category: 'Backend',
-        name: 'Node.js',
-        proficiency: 90
+        name: 'Node.js [TypeScript-based]',
+        proficiency: 93
       },
       {
         group: 'Technical Skills',
@@ -38,19 +38,19 @@ export class Skills implements OnInit {
         group: 'Technical Skills',
         category: 'Database Management',
         name: 'Microsoft SQL Server',
-        proficiency: 90
+        proficiency: 95
       },
       {
         group: 'Technical Skills',
         category: 'Database Management',
         name: 'PostgreSQL',
-        proficiency: 85
+        proficiency: 90
       },
       {
         group: 'Technical Skills',
         category: 'API Development & Integration',
         name: 'RESTful API',
-        proficiency: 88
+        proficiency: 95
       },
       {
         group: 'Technical Skills',
@@ -62,7 +62,7 @@ export class Skills implements OnInit {
         group: 'Technical Skills',
         category: 'DevOps & Cloud',
         name: 'Azure DevOps',
-        proficiency: 90
+        proficiency: 92
       },
       {
         group: 'Technical Skills',
@@ -74,7 +74,7 @@ export class Skills implements OnInit {
         group: 'Technical Skills',
         category: 'DevOps & Cloud',
         name: 'Git',
-        proficiency: 100
+        proficiency: 99
       },
       {
         group: 'Technical Skills',
@@ -86,7 +86,7 @@ export class Skills implements OnInit {
         group: 'Technical Skills',
         category: 'Development Methodologies',
         name: 'Agile Development',
-        proficiency: 95
+        proficiency: 98
       },
       {
         group: 'Soft Skills',
@@ -98,13 +98,13 @@ export class Skills implements OnInit {
         group: 'Soft Skills',
         category: 'Soft Skills',
         name: 'Problem solving',
-        proficiency: 90
+        proficiency: 94
       },
       {
         group: 'Soft Skills',
         category: 'Soft Skills',
         name: 'Creative thinking',
-        proficiency: 90
+        proficiency: 88
       },
       {
         group: 'Soft Skills',
@@ -116,7 +116,7 @@ export class Skills implements OnInit {
         group: 'Soft Skills',
         category: 'Soft Skills',
         name: 'Effective communication',
-        proficiency: 90
+        proficiency: 97
       },
     ];
   }

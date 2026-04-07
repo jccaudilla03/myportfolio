@@ -1,26 +1,30 @@
 <div class="container main-container">
-    @for (group of finalArray; track $index) {
-    <div class="group-container">
-        <h2 class="group-header">{{ group.group }}</h2>
-        @for (category of group.categories; track $index) {
-        <div class="category-container">
-            <h3 class="category-header">{{ category.category }}</h3>
-            <div class="container container-skills">
-                @for (skill of category.skills; track $index) {
-                <div class="col col-md-6">
-                    <div class="container skill-item">
-                        <h4 class="skill-header">{{ skill.name }}</h4>
-                        <div class="progress">
-                            <div class="progress-bar" [style]=" 'width: ' + skill.proficiency + '%' "></div>
+    <div class="row">
+        @for (group of finalArray; track $index) {
+        <div class="col-6">
+            <div class="group-container">
+                <h2 class="group-header">{{ group.group }}</h2>
+                @for (category of group.categories; track $index) {
+                <div class="category-container">
+                    <h3 class="category-header">{{ category.category }}</h3>
+                    <div class="row">
+                        <div class="container container-skills">
+                            @for (skill of category.skills; track $index) {
+                            <div class="col-6">
+                                <div class="container skill-item">
+                                    <h4 class="skill-header">{{ skill.name }}</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" [style]=" 'width: ' + skill.proficiency + '%' "></div>
+                                    </div>
+                                </div>
+                            </div>
+                            }
                         </div>
                     </div>
                 </div>
                 }
-
             </div>
-            
         </div>
-    }
+        }
     </div>
-    }
 </div>

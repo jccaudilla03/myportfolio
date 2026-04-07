@@ -1,4 +1,6 @@
 .main-container {
+    display: contents;
+
     padding: 20px;
     margin-bottom: 50px;
 }
@@ -22,12 +24,18 @@
     padding: 20px;
 }
 
+.group-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .category-container {
     border: 3px solid #739688;
     border-radius: 10px;
     background-color: #163832;
     padding-bottom: 20px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .category-header {
@@ -40,16 +48,11 @@
 .container-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.col {
-    width: 45%;
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 .skill-item {
+    width: 90%;
+    margin-left: 5%;
     border: 3px solid #739688;
     border-radius: 10px;
     background-color: #163832;
@@ -58,7 +61,6 @@
 
 .skill-header {
     font-size: medium;
-    font-weight: bolder;
     padding-top: 10px;
     color: #00f5d4;
 }
