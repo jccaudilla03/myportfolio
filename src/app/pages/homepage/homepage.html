@@ -1,30 +1,5 @@
-<!-- <body> -->
-<div class="container home-container d-flex align-items-center">
-  <div class="row w-100 align-items-center">
-
-    <!-- LEFT SIDE -->
-    <div class="col-md-6 text-center text-md-start">
-      <div class="intro-text">
-        <h1 class="name">{{ name }}</h1>
-        <h3 class="role">{{ role }}</h3>
-        <p class="desc">{{ description }}</p>
-      </div>
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="col-md-6 position-relative">
-      <div class="profile-wrapper">
-        <div class="glow-ring"></div>
-        <img src="jewelcaudilla-png.png" alt="Profile" class="profile-img">
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- </body> -->
-
 <!-- CARDS -->
-<div class="container mb-5">
+<!-- <div class="container mb-5">
   <div class="row">
     @for (item of cardContents; track $index) {
     <div class="col">
@@ -38,6 +13,49 @@
       </div>
     </div>
     }
+  </div>
+</div> -->
+
+<div class="main-container">
+  <div class="body-container">
+    <div class="profile-container">
+      <div class="row profile-row">
+        <!-- LEFT SIDE -->
+        <div class="col-md-6 text-center text-md-start">
+          <div class="intro-text">
+            <h1 class="name">{{ name }}</h1>
+            <h3 class="role">{{ role }}</h3>
+            <p class="desc">{{ description }}</p>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-md-6 position-relative">
+          <div class="profile-wrapper">
+            <div class="glow-ring"></div>
+            <img src="jewelcaudilla-png.png" alt="Profile" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container mb-5">
+      <div class="row">
+        @for (item of cardContents; track $index) {
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <i class="{{ item.icon }} icon"></i>
+              <h5 class="card-title">{{ item.title }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <a routerLink="{{ item.link }}" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
   </div>
 </div>
 
