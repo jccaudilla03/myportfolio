@@ -8,12 +8,15 @@
             <div class="experience-item">
                 <div class="company">
                     <div class="company-name">
-                        <h2 >{{ item.companyName }}</h2>
+                        <h3 >{{ item.companyName }}</h3>
                     </div>
                     <div class="company-location">
                         <div class="location"> {{ item.companyLocation }}</div>
                     </div>
                 </div>
+
+                <hr class="horizontal-rule">
+                
                 @for (jobDesc of item.jobDesc; track $index) {
                 <div class="job-desc">
                     <div class="row">
